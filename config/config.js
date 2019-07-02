@@ -21,7 +21,7 @@ var config = {
 	                                                       // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
 
-	language: "en",
+	language: "pt",
 	timeFormat: 24,
 	units: "metric",
 
@@ -29,65 +29,74 @@ var config = {
 		{
 			module: "alert",
 		},
-		{
-			module: "updatenotification",
-			position: "top_bar"
-		},
-		{
-			module: "clock",
-			position: "top_left"
-		},
-		{
-			module: "calendar",
-			header: "US Holidays",
-			position: "top_left",
-			config: {
-				calendars: [
-					{
-						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
-				]
-			}
-		},
-		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
-			module: "currentweather",
-			position: "top_right",
-			config: {
-				location: "New York",
-				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: "weatherforecast",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
-			}
-		},
+		//{
+		//	module: "updatenotification",
+		//  position: "top_bar"
+		//},
+		//{
+		//	module: "clock",
+		//	position: "top_left"
+        //},
+        
+        {
+                module: 'MMM-SimpleLogo',
+                position: 'bottom_right',
+                config: {
+                    fileUrl: '',
+                    refreshInterval: 0,
+                }
+        },
+		//{
+		//	module: "calendar",
+		//	header: "US Holidays",
+		//	position: "top_left",
+		//	config: {
+		//		calendars: [
+		//			{
+		//				symbol: "calendar-check",
+		//				url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
+		//		]
+		//	}
+		//},
+		//{
+		//	module: "compliments",
+		//	position: "lower_third"
+		//},
+		//{
+		//	module: "currentweather",
+		//	position: "top_right",
+		//	config: {
+		//		location: "New York",
+		//		locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+		//		appid: "YOUR_OPENWEATHER_API_KEY"
+		//	}
+		//},
+		//{
+		//	module: "weatherforecast",
+		//	position: "top_right",
+		//	header: "Weather Forecast",
+		//	config: {
+		//		location: "New York",
+		//		locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+		//		appid: "YOUR_OPENWEATHER_API_KEY"
+		//	}
+		//},
+		//{
+		//	module: "newsfeed",
+		//	position: "bottom_bar",
+		//	config: {
+		//		feeds: [
+		//			{
+		//				title: "New York Times",
+		//				url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+		//			}
+		//		],
+		//		showSourceTitle: true,
+		//		showPublishDate: true,
+		//		broadcastNewsFeeds: true,
+		//		broadcastNewsUpdates: true
+		//	}
+		//},
 	]
 
 };
