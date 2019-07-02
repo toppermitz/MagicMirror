@@ -1,0 +1,3 @@
+[submodule "modules/MMM-SimpleLogo"]
+	path = modules/MMM-SimpleLogo
+	url = https://github.com/frdteknikelektro/MMM-SimpleLogo
