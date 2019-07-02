@@ -42,7 +42,8 @@ var config = {
                 module: 'MMM-SimpleLogo',
                 position: 'top_right',
                 config: {
-                    fileUrl:'~/MagicMirror/modules/MMM-SimpleLogo/public/Server.png',
+                    fileUrl:'modules/MMM-SimpleLogo/public/Server.png',
+                    text:'',
                 }
         },
 		//{
