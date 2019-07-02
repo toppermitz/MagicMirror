@@ -43,7 +43,7 @@ var config = {
                 position: 'bottom_right',
                 config: {
                     refreshInterval: 0,
-                    
+                    fileUrl:'modules/MMM-SimpleLogo/public/logo.png',
                 }
         },
 		//{
