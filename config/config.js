@@ -42,7 +42,7 @@ var config = {
                 module: 'MMM-SimpleLogo',
                 position: 'top_right',
                 config: {
-                    fileUrl:'modules/MMM-SimpleLogo/public/logo.png',
+                
                 }
         },
 		//{
