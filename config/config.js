@@ -42,8 +42,8 @@ var config = {
                 module: 'MMM-SimpleLogo',
                 position: 'bottom_right',
                 config: {
-                    fileUrl: '',
                     refreshInterval: 0,
+                    
                 }
         },
 		//{
