@@ -42,7 +42,6 @@ var config = {
                 module: 'MMM-SimpleLogo',
                 position: 'top_right',
                 config: {
-                    refreshInterval: 0,
                     fileUrl:'modules/MMM-SimpleLogo/public/logo.png',
                 }
         },
